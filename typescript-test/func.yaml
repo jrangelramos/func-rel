@@ -1,0 +1,26 @@
+specVersion: 0.34.0
+name: typescript-test
+runtime: typescript
+registry: ""
+image: ""
+imageDigest: ""
+created: 2022-11-30T14:48:40.145960028-03:00
+invocation:
+  format: http
+build:
+  buildpacks: []
+  builder: ""
+  buildEnvs:
+  - name: BP_NODE_RUN_SCRIPTS
+    value: build
+run:
+  volumes: []
+  envs: []
+deploy:
+  namespace: ""
+  annotations: {}
+  options: {}
+  labels: []
+  healthEndpoints:
+    liveness: /health/liveness
+    readiness: /health/readiness

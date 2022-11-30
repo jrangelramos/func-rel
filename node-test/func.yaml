@@ -1,0 +1,24 @@
+specVersion: 0.34.0
+name: node-test
+runtime: node
+registry: ""
+image: ""
+imageDigest: ""
+created: 2022-11-30T14:48:23.46810922-03:00
+invocation:
+  format: http
+build:
+  buildpacks: []
+  builder: ""
+  buildEnvs: []
+run:
+  volumes: []
+  envs: []
+deploy:
+  namespace: ""
+  annotations: {}
+  options: {}
+  labels: []
+  healthEndpoints:
+    liveness: /health/liveness
+    readiness: /health/readiness
